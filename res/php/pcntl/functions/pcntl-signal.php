@@ -6,7 +6,7 @@
  * @phpstub
  *
  * @param int $signo
- * @param callable $handler
+ * @param callable|int $handler
  * @param bool $restart_syscalls
  *
  * @return bool 

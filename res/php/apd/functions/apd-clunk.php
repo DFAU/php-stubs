@@ -10,6 +10,6 @@
  *
  * @return void 
  */
-function apd_clunk($warning, $delimiter = NULL)
+function apd_clunk($warning, $delimiter = 'quotltBR /gtquot')
 {
 }

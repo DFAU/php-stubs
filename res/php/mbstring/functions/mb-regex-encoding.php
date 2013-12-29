@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Returns current encoding for multibyte regex as string
+ * Set/Get character encoding for multibyte regex
  *
  * @phpstub
  *
@@ -9,6 +9,6 @@
  *
  * @return mixed
  */
-function mb_regex_encoding($encoding = NULL)
+function mb_regex_encoding($encoding = 'mb_regex_encoding()')
 {
 }

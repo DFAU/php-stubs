@@ -17,19 +17,20 @@ class IntlDateFormatter
      * @param string $locale
      * @param int $datetype
      * @param int $timetype
-     * @param string $timezone
-     * @param int $calendar
+     * @param mixed $timezone
+     * @param mixed $calendar
      * @param string $pattern
      * @param string $locale
      * @param int $datetype
      * @param int $timetype
-     * @param string $timezone
-     * @param int $calendar
+     * @param mixed $timezone
+     * @param mixed $calendar
      * @param string $pattern
      *
-     * @return IntlDateFormatter 
+     * @return IntlDateFormatter The created ``IntlDateFormatter`` or false in case of
+     *                           failure.
      */
-    public function create($locale, $datetype, $timetype, $timezone = NULL, $calendar = NULL, $pattern = NULL, $locale, $datetype, $timetype, $timezone = NULL, $calendar = NULL, $pattern = NULL)
+    public function create($locale, $datetype, $timetype, $timezone = NULL, $calendar = NULL, $pattern = '\'\'', $locale, $datetype, $timetype, $timezone = NULL, $calendar = NULL, $pattern = '\'\'')
     {
     }
 
@@ -47,13 +48,40 @@ class IntlDateFormatter
     }
 
     /**
-     * Get the calendar used for the IntlDateFormatter
+     * Formats an object
+     *
+     * @param object $object
+     * @param mixed $format
+     * @param string $locale
+     * @param object $object
+     * @param mixed $format
+     * @param string $locale
+     *
+     * @return string A string with result.
+     */
+    public function formatObject($object, $format = NULL, $locale = NULL, $object, $format = NULL, $locale = NULL)
+    {
+    }
+
+    /**
+     * Get the calendar type used for the IntlDateFormatter
      *
      * @param IntlDateFormatter $fmt
      *
-     * @return int The calendar being used by the formatter.
+     * @return int The  being used by the formatter. Either
+     *             or
+     *             .
      */
     public function getCalendar($fmt)
+    {
+    }
+
+    /**
+     * Get copy of formatterʼs calendar object
+     *
+     * @return IntlCalendar A copy of the internal calendar object used by this formatter.
+     */
+    public function getCalendarObject()
     {
     }
 
@@ -126,6 +154,16 @@ class IntlDateFormatter
     }
 
     /**
+     * Get formatterʼs timezone
+     *
+     * @return IntlTimeZone The associated ``IntlTimeZone``
+     *                      object.
+     */
+    public function getTimeZone()
+    {
+    }
+
+    /**
      * Get the timezone-id used for the IntlDateFormatter
      *
      * @param IntlDateFormatter $fmt
@@ -171,18 +209,18 @@ class IntlDateFormatter
      * @param string $value
      * @param int $position
      *
-     * @return int timestamp  parsed value
+     * @return int timestamp parsed value, or false if value can't be parsed.
      */
     public function parse($value, &$position = NULL, $fmt, $value, &$position = NULL)
     {
     }
 
     /**
-     * sets the calendar used to the appropriate calendar, which must be
+     * Sets the calendar type used by the formatter
      *
-     * @param int $which
+     * @param mixed $which
      * @param IntlDateFormatter $fmt
-     * @param int $which
+     * @param mixed $which
      *
      * @return bool 
      */
@@ -213,6 +251,18 @@ class IntlDateFormatter
      * @return bool Bad formatstrings are usually the cause of the failure.
      */
     public function setPattern($pattern, $fmt, $pattern)
+    {
+    }
+
+    /**
+     * Sets formatterʼs timezone
+     *
+     * @param mixed $zone
+     * @param mixed $zone
+     *
+     * @return boolean Returns true on success and false on failure.
+     */
+    public function setTimeZone($zone, $zone)
     {
     }
 

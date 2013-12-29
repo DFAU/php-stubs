@@ -10,6 +10,6 @@
  *
  * @return string The trimmed string.
  */
-function trim($str, $charlist = NULL)
+function trim($str, $charlist = ' \\t\\n\\r\\0\\x0B')
 {
 }

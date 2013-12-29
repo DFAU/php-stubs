@@ -48,6 +48,21 @@ class ZipArchive
     const FL_UNCHANGED = NULL;
     const OVERWRITE = NULL;
 
+    /** @var int */
+    public $statusSys;
+
+    /** @var int */
+    public $status;
+
+    /** @var int */
+    public $numFiles;
+
+    /** @var string */
+    public $filename;
+
+    /** @var string */
+    public $comment;
+
     /**
      * Add a new directory
      *
@@ -82,6 +97,32 @@ class ZipArchive
      * @return bool 
      */
     public function addFromString($localname, $contents)
+    {
+    }
+
+    /**
+     * Add files from a directory by glob pattern
+     *
+     * @param string $pattern
+     * @param int $flags
+     * @param array $options
+     *
+     * @return bool 
+     */
+    public function addGlob($pattern, $flags = false, $options = array())
+    {
+    }
+
+    /**
+     * Add files from a directory by PCRE pattern
+     *
+     * @param string $pattern
+     * @param string $path
+     * @param array $options
+     *
+     * @return bool 
+     */
+    public function addPattern($pattern, $path = '\'.\'', $options = array())
     {
     }
 
@@ -170,7 +211,7 @@ class ZipArchive
      * @param int $length
      * @param int $flags
      *
-     * @return mixed Returns the contents of the entry on success.
+     * @return string Returns the contents of the entry on success.
      */
     public function getFromIndex($index, $length = false, $flags = NULL)
     {
@@ -183,7 +224,7 @@ class ZipArchive
      * @param int $length
      * @param int $flags
      *
-     * @return mixed Returns the contents of the entry on success.
+     * @return string Returns the contents of the entry on success.
      */
     public function getFromName($name, $length = false, $flags = NULL)
     {
@@ -227,7 +268,7 @@ class ZipArchive
      * @param string $name
      * @param int $flags
      *
-     * @return mixed Returns the index of the entry on success.
+     * @return int Returns the index of the entry on success.
      */
     public function locateName($name, $flags = NULL)
     {
@@ -274,7 +315,7 @@ class ZipArchive
      *
      * @param string $comment
      *
-     * @return mixed 
+     * @return bool 
      */
     public function setArchiveComment($comment)
     {
@@ -286,7 +327,7 @@ class ZipArchive
      * @param int $index
      * @param string $comment
      *
-     * @return mixed 
+     * @return bool 
      */
     public function setCommentIndex($index, $comment)
     {
@@ -298,7 +339,7 @@ class ZipArchive
      * @param string $name
      * @param string $comment
      *
-     * @return mixed 
+     * @return bool 
      */
     public function setCommentName($name, $comment)
     {
@@ -310,7 +351,7 @@ class ZipArchive
      * @param int $index
      * @param int $flags
      *
-     * @return mixed Returns an array containing the entry details.
+     * @return array Returns an array containing the entry details.
      */
     public function statIndex($index, $flags = NULL)
     {
@@ -319,10 +360,10 @@ class ZipArchive
     /**
      * Get the details of an entry defined by its name.
      *
-     * @param name $name
+     * @param string $name
      * @param int $flags
      *
-     * @return mixed Returns an array containing the entry details .
+     * @return array Returns an array containing the entry details .
      */
     public function statName($name, $flags = NULL)
     {
@@ -331,7 +372,7 @@ class ZipArchive
     /**
      * Undo all changes done in the archive
      *
-     * @return mixed 
+     * @return bool 
      */
     public function unchangeAll()
     {
@@ -340,7 +381,7 @@ class ZipArchive
     /**
      * Revert all global changes done in the archive.
      *
-     * @return mixed 
+     * @return bool 
      */
     public function unchangeArchive()
     {
@@ -351,7 +392,7 @@ class ZipArchive
      *
      * @param int $index
      *
-     * @return mixed 
+     * @return bool 
      */
     public function unchangeIndex($index)
     {
@@ -362,7 +403,7 @@ class ZipArchive
      *
      * @param string $name
      *
-     * @return mixed 
+     * @return bool 
      */
     public function unchangeName($name)
     {

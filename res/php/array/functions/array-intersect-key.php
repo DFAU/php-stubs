@@ -3,6 +3,7 @@
 /**
  * Computes the intersection of arrays using keys for comparison
  *
+ * @phpstub-variable-parameters
  * @phpstub
  *
  * @param array $array1

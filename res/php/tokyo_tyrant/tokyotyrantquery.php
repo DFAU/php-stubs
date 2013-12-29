@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class TokyoTyrantQuery implements \Iterator, \Traversable
+class TokyoTyrantQuery implements \Iterator
 {
     /**
      * Construct a new query

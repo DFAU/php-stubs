@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class EmptyIterator implements \Iterator, \Traversable
+class EmptyIterator implements \Iterator
 {
     /**
      * The current() method

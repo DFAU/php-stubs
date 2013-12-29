@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class SplObjectStorage implements \Countable, \Iterator, \Traversable, \Serializable, \ArrayAccess
+class SplObjectStorage implements \Countable, \Iterator, \Serializable, \ArrayAccess
 {
     /**
      * Adds all objects from another storage

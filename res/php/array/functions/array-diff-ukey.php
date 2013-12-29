@@ -3,6 +3,7 @@
 /**
  * Computes the difference of arrays using a callback function on the keys for comparison
  *
+ * @phpstub-variable-parameters
  * @phpstub
  *
  * @param array $array1

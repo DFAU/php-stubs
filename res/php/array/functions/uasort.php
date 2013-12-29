@@ -6,10 +6,10 @@
  * @phpstub
  *
  * @param array $array
- * @param callable $cmp_function
+ * @param callable $value_compare_func
  *
  * @return bool 
  */
-function uasort(&$array, $cmp_function)
+function uasort(&$array, $value_compare_func)
 {
 }

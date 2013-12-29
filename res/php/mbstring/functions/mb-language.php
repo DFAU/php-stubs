@@ -14,6 +14,6 @@
  *               name as a ``string``. If no language is set previously, it then returns
  *               false.
  */
-function mb_language($language = NULL)
+function mb_language($language = 'mb_language()')
 {
 }

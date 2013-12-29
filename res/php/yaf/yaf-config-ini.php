@@ -1,10 +1,10 @@
 <?php
 
 /** @phpstub */
-class Yaf_Config_Ini extends \Yaf_Config_Abstract implements \Iterator, \Traversable, \ArrayAccess, \Countable
+class Yaf_Config_Ini extends \Yaf_Config_Abstract implements \Iterator, \ArrayAccess, \Countable
 {
     /**
-     * The __construct purpose
+     * Yaf_Config_Ini constructor
      *
      * @param string $config_file
      * @param string $section
@@ -147,9 +147,9 @@ class Yaf_Config_Ini extends \Yaf_Config_Abstract implements \Iterator, \Travers
     }
 
     /**
-     * The toArray purpose
+     * Returns a PHP array
      *
-     * @return void 
+     * @return array 
      */
     public function toArray()
     {

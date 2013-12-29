@@ -8,11 +8,11 @@
  * @param string $data
  * @param string $method
  * @param string $password
- * @param bool $raw_input
+ * @param int $options
  * @param string $iv
  *
  * @return string The decrypted string on success.
  */
-function openssl_decrypt($data, $method, $password, $raw_input = false, $iv = '')
+function openssl_decrypt($data, $method, $password, $options = false, $iv = '')
 {
 }

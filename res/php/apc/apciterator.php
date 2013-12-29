@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class APCIterator implements \Iterator, \Traversable
+class APCIterator implements \Iterator
 {
     /**
      * Constructs an APCIterator iterator object
@@ -12,7 +12,7 @@ class APCIterator implements \Iterator, \Traversable
      * @param int $chunk_size
      * @param int $list
      */
-    public function __construct($cache, $search = NULL, $format = NULL, $chunk_size = 100, $list = NULL)
+    public function __construct($cache, $search = NULL, $format = false, $chunk_size = 100, $list = false)
     {
     }
 

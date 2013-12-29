@@ -5,12 +5,12 @@
  *
  * @phpstub
  *
- * @param resource $context
+ * @param resource $hcontext
  * @param string $filename
- * @param resource $context
+ * @param resource $scontext
  *
  * @return bool 
  */
-function hash_update_file($context, $filename, $context = NULL)
+function hash_update_file($hcontext, $filename, $scontext = NULL)
 {
 }

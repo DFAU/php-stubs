@@ -4,9 +4,21 @@
 class Worker
 {
     /**
+     * Manipulation
+     *
+     * @param long $size
+     * @param boolean $preserve
+     *
+     * @return boolean An array of items from the objects member table
+     */
+    public function chunk($size, $preserve)
+    {
+    }
+
+    /**
      * Identification
      *
-     * @return long A numeric value representing the identity of the creating context
+     * @return long A numeric identity
      */
     public function getCreatorId()
     {
@@ -24,7 +36,7 @@ class Worker
     /**
      * Identification
      *
-     * @return long A numeric value representing the identity of the referenced Worker
+     * @return long A numeric identity
      */
     public function getThreadId()
     {
@@ -35,7 +47,7 @@ class Worker
      *
      * @return boolean A boolean indication of state
      */
-    public function isJoined()
+    public function isShutdown()
     {
     }
 
@@ -44,25 +56,55 @@ class Worker
      *
      * @return boolean A boolean indication of state
      */
-    public function isWaiting()
+    public function isWorking()
     {
     }
 
     /**
-     * Synchronization
+     * Manipulation
      *
-     * @return mixed 
+     * @param mixed $from
+     * @param mixed $overwrite
+     *
+     * @return boolean A boolean indication of success
      */
-    public function join()
+    public function merge($from, $overwrite = NULL)
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @return boolean The last item from the objects properties table
+     */
+    public function pop()
     {
     }
 
     /**
      * Execution
      *
-     * @return mixed 
+     * @return void The methods return value, if used, will be ignored
      */
     public function run()
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @return boolean The first item from the objects properties table
+     */
+    public function shift()
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @return boolean 
+     */
+    public function shutdown()
     {
     }
 
@@ -80,11 +122,11 @@ class Worker
     /**
      * Execution
      *
-     * @param boolean $synchronized
+     * @param long $options
      *
      * @return boolean A boolean indication of success
      */
-    public function start($synchronized = NULL)
+    public function start($options = NULL)
     {
     }
 

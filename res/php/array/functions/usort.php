@@ -6,10 +6,10 @@
  * @phpstub
  *
  * @param array $array
- * @param callable $cmp_function
+ * @param callable $value_compare_func
  *
  * @return bool 
  */
-function usort(&$array, $cmp_function)
+function usort(&$array, $value_compare_func)
 {
 }

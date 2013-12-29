@@ -14,6 +14,6 @@
  *             in the
  *             string, or false if  is not found.
  */
-function mb_stripos($haystack, $needle, $offset = NULL, $encoding = NULL)
+function mb_stripos($haystack, $needle, $offset = false, $encoding = 'mb_internal_encoding()')
 {
 }

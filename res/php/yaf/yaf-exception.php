@@ -3,10 +3,6 @@
 /** @phpstub */
 class Yaf_Exception extends \Exception
 {
-    protected $previous;
-    protected $message;
-    protected $code;
-
     /**
      * The __construct purpose
      */

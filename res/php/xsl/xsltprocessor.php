@@ -16,7 +16,7 @@ class XSLTProcessor
      * @param string $namespaceURI
      * @param string $localName
      *
-     * @return string The value of the parameter or null if it's not set.
+     * @return string The value of the parameter (as a string), or false if it's not set.
      */
     public function getParameter($namespaceURI, $localName)
     {

@@ -4,56 +4,30 @@
 class Thread
 {
     /**
-     * Statistics
+     * Manipulation
      *
-     * @return int An integral number
+     * @param long $size
+     * @param boolean $preserve
+     *
+     * @return boolean An array of items from the objects member table
      */
-    public function getCount()
-    {
-    }
-
-    /**
-     * Statistics
-     *
-     * @return long An integral number
-     */
-    public function getMax()
-    {
-    }
-
-    /**
-     * Statistics
-     *
-     * @return long An integral number
-     */
-    public function getPeak()
-    {
-    }
-
-    /**
-     * Return the number of items on the referenced Threads stack.
-     *
-     * @return int An integral number representing the number of items left on the stack.
-     */
-    public function getStacked()
-    {
-    }
-
-    /**
-     * Synchronization
-     *
-     * @param string $tid
-     *
-     * @return mixed An object of the same type as the requested Thread or Worker
-     */
-    public function getThread($tid)
+    public function chunk($size, $preserve)
     {
     }
 
     /**
      * Identification
      *
-     * @return long A numeric value representing the identity of the referenced Thread
+     * @return long A numeric identity
+     */
+    public function getCreatorId()
+    {
+    }
+
+    /**
+     * Identification
+     *
+     * @return long A numeric identity
      */
     public function getThreadId()
     {
@@ -91,6 +65,15 @@ class Thread
      *
      * @return boolean A boolean indication of state
      */
+    public function isTerminated()
+    {
+    }
+
+    /**
+     * State Detection
+     *
+     * @return boolean A boolean indication of state
+     */
     public function isWaiting()
     {
     }
@@ -98,7 +81,7 @@ class Thread
     /**
      * Synchronization
      *
-     * @return mixed 
+     * @return boolean A boolean indication of success
      */
     public function join()
     {
@@ -107,29 +90,91 @@ class Thread
     /**
      * Synchronization
      *
-     * @return int An integral indication of success
+     * @return boolean A boolean indication of success
+     */
+    public function lock()
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @param mixed $from
+     * @param mixed $overwrite
+     *
+     * @return boolean A boolean indication of success
+     */
+    public function merge($from, $overwrite = NULL)
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @return boolean A boolean indication of success
      */
     public function notify()
     {
     }
 
     /**
-     * Execution
+     * Manipulation
      *
-     * @return mixed 
+     * @return boolean The last item from the objects properties table
      */
-    public function run()
+    public function pop()
     {
     }
 
     /**
      * Execution
      *
-     * @param boolean $synchronized
+     * @return void The methods return value, if used, will be ignored
+     */
+    public function run()
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @return boolean The first item from the objects properties table
+     */
+    public function shift()
+    {
+    }
+
+    /**
+     * Execution
+     *
+     * @param long $options
      *
      * @return boolean A boolean indication of success
      */
-    public function start($synchronized = NULL)
+    public function start($options = NULL)
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @phpstub-variable-parameters
+     *
+     * @param Closure $block
+     * @param mixed $_
+     *
+     * @return mixed The return value from the block
+     */
+    public function synchronized($block, $_ = NULL)
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @return boolean A boolean indication of success
+     */
+    public function unlock()
     {
     }
 
@@ -138,7 +183,7 @@ class Thread
      *
      * @param long $timeout
      *
-     * @return int An integral indication of success
+     * @return boolean A boolean indication of success
      */
     public function wait($timeout = NULL)
     {

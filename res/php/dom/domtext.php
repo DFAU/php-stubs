@@ -20,7 +20,8 @@ class DOMText extends \DOMCharacterData
        Indicates whether this text node contains whitespace
       
      *
-     * @return bool 
+     * @return bool Returns true if node contains zero or more whitespace characters and
+     *              nothing else. Returns false otherwise.
      */
     public function isWhitespaceInElementContent()
     {

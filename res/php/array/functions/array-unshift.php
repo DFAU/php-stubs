@@ -7,11 +7,11 @@
  * @phpstub
  *
  * @param array $array
- * @param mixed $var
+ * @param mixed $value1
  * @param mixed $_
  *
  * @return int Returns the new number of elements in the .
  */
-function array_unshift(&$array, $var, $_ = NULL)
+function array_unshift(&$array, $value1, $_ = NULL)
 {
 }

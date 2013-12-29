@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Send an error message somewhere
+ * Send an error message to the defined error handling routines
  *
  * @phpstub
  *

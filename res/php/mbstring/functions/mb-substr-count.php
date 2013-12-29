@@ -13,6 +13,6 @@
  *             substring occurs in the
  *             .
  */
-function mb_substr_count($haystack, $needle, $encoding = NULL)
+function mb_substr_count($haystack, $needle, $encoding = 'mb_internal_encoding()')
 {
 }

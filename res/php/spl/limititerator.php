@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class LimitIterator extends \IteratorIterator implements \OuterIterator, \Traversable, \Iterator
+class LimitIterator extends \IteratorIterator implements \OuterIterator
 {
     /**
      * Construct a LimitIterator

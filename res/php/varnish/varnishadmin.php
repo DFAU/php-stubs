@@ -62,6 +62,15 @@ class VarnishAdmin
     }
 
     /**
+     * Disconnect from a varnish instance administration interface
+     *
+     * @return bool 
+     */
+    public function disconnect()
+    {
+    }
+
+    /**
      * Get the last panic message on a varnish instance
      *
      * @return string Returns the last panic message on the current varnish instance.

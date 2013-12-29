@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class RecursiveCachingIterator extends \CachingIterator implements \Countable, \ArrayAccess, \Iterator, \Traversable, \OuterIterator, \RecursiveIterator
+class RecursiveCachingIterator extends \CachingIterator implements \Countable, \ArrayAccess, \OuterIterator, \RecursiveIterator
 {
     /**
      * Construct

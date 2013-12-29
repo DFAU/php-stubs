@@ -67,6 +67,15 @@ class AMQPConnection
     }
 
     /**
+     * Get the configured timeout
+     *
+     * @return int The configured timeout as an integer.
+     */
+    public function getTimeout()
+    {
+    }
+
+    /**
      * Get the configured vhost
      *
      * @return string The configured virtual host as a string.
@@ -134,6 +143,17 @@ class AMQPConnection
      * @return bool 
      */
     public function setPort($port)
+    {
+    }
+
+    /**
+     * Set the timeout.
+     *
+     * @param float $timeout
+     *
+     * @return bool 
+     */
+    public function setTimeout($timeout)
     {
     }
 

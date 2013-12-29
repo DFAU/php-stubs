@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class DirectoryIterator extends \SplFileInfo implements \Iterator, \Traversable, \SeekableIterator
+class DirectoryIterator extends \SplFileInfo implements \SeekableIterator
 {
     /**
      * Constructs a new directory iterator from a path

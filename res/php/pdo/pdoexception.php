@@ -7,8 +7,5 @@ class PDOException extends \RuntimeException
     public $errorInfo;
 
     /** @var string */
-    protected $message;
-
-    /** @var string */
     protected $code;
 }

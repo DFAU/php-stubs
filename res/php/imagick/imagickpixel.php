@@ -91,6 +91,18 @@ class ImagickPixel
      *
      * @return bool 
      */
+    public function isPixelSimilar($color, $fuzz)
+    {
+    }
+
+    /**
+     * Check the distance between this color and another
+     *
+     * @param ImagickPixel $color
+     * @param float $fuzz
+     *
+     * @return bool 
+     */
     public function isSimilar($color, $fuzz)
     {
     }

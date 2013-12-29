@@ -7,8 +7,8 @@
  *
  * @param string $cache_type
  *
- * @return bool 
+ * @return bool Returns true always
  */
-function apc_clear_cache($cache_type = NULL)
+function apc_clear_cache($cache_type = 'quotquot')
 {
 }

@@ -10,7 +10,7 @@ class mysqli
      *
      * @return int An integer greater than zero indicates the number of rows affected or
      *             retrieved.
-     *             Zero indicates that no records where updated for an UPDATE statement, no
+     *             Zero indicates that no records were updated for an UPDATE statement, no
      *             rows matched the  clause in the query or that no
      *             query has yet been executed. -1 indicates that the query returned an
      *             error.
@@ -241,6 +241,21 @@ class mysqli
     }
 
     /**
+     * Starts a transaction
+     *
+     * @param int $flags
+     * @param string $name
+     * @param mysqli $link
+     * @param int $flags
+     * @param string $name
+     *
+     * @return bool 
+     */
+    public function begin_transaction($flags = NULL, $name = NULL, $link, $flags = NULL, $name = NULL)
+    {
+    }
+
+    /**
      * Changes the user of the specified database connection
      *
      * @param string $user
@@ -282,11 +297,15 @@ class mysqli
     /**
      * Commits the current transaction
      *
+     * @param int $flags
+     * @param string $name
      * @param mysqli $link
+     * @param int $flags
+     * @param string $name
      *
      * @return bool 
      */
-    public function commit($link)
+    public function commit($flags = NULL, $name = NULL, $link, $flags = NULL, $name = NULL)
     {
     }
 
@@ -395,7 +414,8 @@ class mysqli
      *
      * @param mysqli $link
      *
-     * @return bool 
+     * @return bool Returns true if one or more result sets are available from a previous call to
+     *              , otherwise false.
      */
     public function more_results($link)
     {
@@ -467,7 +487,7 @@ class mysqli
      * @param int $sec
      * @param int $usec
      *
-     * @return int Returns number of ready connections in success, false otherwise.
+     * @return int Returns number of ready connections upon success, false otherwise.
      */
     public function poll(&$read, &$error, &$reject, $sec, $usec = NULL, &$read, &$error, &$reject, $sec, $usec = NULL)
     {
@@ -581,13 +601,30 @@ class mysqli
     }
 
     /**
-     * Rolls back current transaction
+     * Rolls back a transaction to the named savepoint
      *
+     * @param string $name
      * @param mysqli $link
+     * @param string $name
      *
      * @return bool 
      */
-    public function rollback($link)
+    public function release_savepoint($name, $link, $name)
+    {
+    }
+
+    /**
+     * Rolls back current transaction
+     *
+     * @param int $flags
+     * @param string $name
+     * @param mysqli $link
+     * @param int $flags
+     * @param string $name
+     *
+     * @return bool 
+     */
+    public function rollback($flags = NULL, $name = NULL, $link, $flags = NULL, $name = NULL)
     {
     }
 
@@ -601,6 +638,19 @@ class mysqli
      * @return int
      */
     public function rpl_query_type($query, $link, $query)
+    {
+    }
+
+    /**
+     * Set a named transaction savepoint
+     *
+     * @param string $name
+     * @param mysqli $link
+     * @param string $name
+     *
+     * @return bool 
+     */
+    public function savepoint($name, $link, $name)
     {
     }
 
@@ -665,6 +715,13 @@ class mysqli
      * @return bool 
      */
     public function set_local_infile_handler($link, $read_func, $link, $read_func)
+    {
+    }
+
+    /**
+     * Alias of 
+     */
+    public function set_opt()
     {
     }
 

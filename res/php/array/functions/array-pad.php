@@ -5,9 +5,9 @@
  *
  * @phpstub
  *
- * @param array $input
- * @param int $pad_size
- * @param mixed $pad_value
+ * @param array $array
+ * @param int $size
+ * @param mixed $value
  *
  * @return array Returns a copy of the  padded to size specified
  *               by  with value
@@ -17,6 +17,6 @@
  *               than or equal to the length of the  then no
  *               padding takes place.
  */
-function array_pad($input, $pad_size, $pad_value)
+function array_pad($array, $size, $value)
 {
 }

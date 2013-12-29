@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class Imagick implements \Iterator, \Traversable
+class Imagick implements \Iterator
 {
     const ALIGN_CENTER = NULL;
     const ALIGN_LEFT = NULL;
@@ -353,6 +353,7 @@ class Imagick implements \Iterator, \Traversable
     const RESOURCETYPE_FILE = NULL;
     const RESOURCETYPE_MAP = NULL;
     const RESOURCETYPE_MEMORY = NULL;
+    const RESOURCETYPE_THREAD = NULL;
     const RESOURCETYPE_UNDEFINED = NULL;
     const SPARSECOLORMETHOD_BARYCENTRIC = NULL;
     const SPARSECOLORMETHOD_BILINEAR = NULL;
@@ -3407,11 +3408,11 @@ class Imagick implements \Iterator, \Traversable
     /**
      * Sets the image ticks-per-second
      *
-     * @param int $ticks_per-second
+     * @param int $ticks_per_second
      *
      * @return bool 
      */
-    public function setImageTicksPerSecond($ticks_per-second)
+    public function setImageTicksPerSecond($ticks_per_second)
     {
     }
 

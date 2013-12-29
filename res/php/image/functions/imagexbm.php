@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Output XBM image to browser or file
+ * Output an XBM image to browser or file
  *
  * @phpstub
  *

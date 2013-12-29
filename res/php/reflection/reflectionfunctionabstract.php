@@ -24,6 +24,15 @@ class ReflectionFunctionAbstract implements \Reflector
     }
 
     /**
+     * Returns the scope associated to the closure
+     *
+     * @return ReflectionClass Returns the class on success or null on failure.
+     */
+    public function getClosureScopeClass()
+    {
+    }
+
+    /**
      * Returns this pointer bound to closure
      *
      * @return object Returns  pointer.
@@ -174,6 +183,16 @@ class ReflectionFunctionAbstract implements \Reflector
      * @return bool true if it's deprecated, otherwise false
      */
     public function isDeprecated()
+    {
+    }
+
+    /**
+     * Returns whether this function is a generator
+     *
+     * @return bool Returns true if the function is generator, false if it is not or null
+     *              on failure.
+     */
+    public function isGenerator()
     {
     }
 

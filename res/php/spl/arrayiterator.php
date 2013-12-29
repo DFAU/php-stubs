@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class ArrayIterator implements \Iterator, \Traversable, \ArrayAccess, \SeekableIterator, \Countable, \Serializable
+class ArrayIterator implements \ArrayAccess, \SeekableIterator, \Countable, \Serializable
 {
     /**
      * Construct an ArrayIterator

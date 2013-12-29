@@ -15,6 +15,6 @@
  *                and
  *                parameters.
  */
-function mb_strcut($str, $start, $length = NULL, $encoding = NULL)
+function mb_strcut($str, $start, $length = false, $encoding = 'mb_internal_encoding()')
 {
 }

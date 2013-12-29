@@ -10,6 +10,6 @@
  *
  * @return void 
  */
-function apd_set_session_trace($debug_level, $dump_directory = NULL)
+function apd_set_session_trace($debug_level, $dump_directory = 'ini_get(quotapd.dumpdirquot)')
 {
 }

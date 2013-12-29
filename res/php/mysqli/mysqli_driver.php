@@ -22,6 +22,17 @@ class mysqli_driver
     public $client_info;
 
     /**
+     * Enables or disables internal report functions
+     *
+     * @param int $flags
+     *
+     * @return bool 
+     */
+    public function $report_mode($flags)
+    {
+    }
+
+    /**
      * Stop embedded server
      *
      * @return void

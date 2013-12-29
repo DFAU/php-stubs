@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class AppendIterator extends \IteratorIterator implements \OuterIterator, \Traversable, \Iterator
+class AppendIterator extends \IteratorIterator implements \OuterIterator
 {
     /**
      * Constructs an AppendIterator
@@ -62,7 +62,7 @@ class AppendIterator extends \IteratorIterator implements \OuterIterator, \Trave
     /**
      * Gets the current key
      *
-     * @return void The current key if it is valid or null otherwise.
+     * @return scalar The current key if it is valid or null otherwise.
      */
     public function key()
     {

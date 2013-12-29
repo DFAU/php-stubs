@@ -7,7 +7,7 @@
  *
  * @param mixed $var
  *
- * @return string Possibles values for the returned string are:
+ * @return string Possible values for the returned string are:
  */
 function gettype($var)
 {

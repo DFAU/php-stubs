@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class SimpleXMLIterator extends \SimpleXMLElement implements \RecursiveIterator, \Traversable, \Iterator, \Countable
+class SimpleXMLIterator extends \SimpleXMLElement implements \RecursiveIterator, \Countable
 {
     /**
      * Returns the current element

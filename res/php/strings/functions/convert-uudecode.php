@@ -7,7 +7,7 @@
  *
  * @param string $data
  *
- * @return string Returns the decoded data as a string.
+ * @return string Returns the decoded data as a string .
  */
 function convert_uudecode($data)
 {

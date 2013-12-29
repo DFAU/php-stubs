@@ -5,10 +5,10 @@
  *
  * @phpstub
  *
- * @param array $trans
+ * @param array $array
  *
  * @return array Returns the flipped array on success and null on failure.
  */
-function array_flip($trans)
+function array_flip($array)
 {
 }

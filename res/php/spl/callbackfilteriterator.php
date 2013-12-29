@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class CallbackFilterIterator extends \FilterIterator implements \Iterator, \Traversable, \OuterIterator
+class CallbackFilterIterator extends \FilterIterator implements \OuterIterator
 {
     /**
      * Create a filtered iterator from another iterator

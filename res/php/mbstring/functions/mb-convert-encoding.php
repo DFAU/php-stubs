@@ -11,6 +11,6 @@
  *
  * @return string The encoded ``string``.
  */
-function mb_convert_encoding($str, $to_encoding, $from_encoding = NULL)
+function mb_convert_encoding($str, $to_encoding, $from_encoding = 'mb_internal_encoding()')
 {
 }

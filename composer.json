@@ -6,7 +6,7 @@
                 "name": "php/docs",
                 "version": "dev-master",
                 "source": {
-                    "url": "https://svn.php.net/repository/phpdoc/en/",
+                    "url": "http://svn.php.net/repository/phpdoc/en/",
                     "type": "svn",
                     "reference": "trunk/reference"
                 }

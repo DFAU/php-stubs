@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class RecursiveIteratorIterator implements \OuterIterator, \Traversable, \Iterator
+class RecursiveIteratorIterator implements \OuterIterator
 {
     const CATCH_GET_CHILD = 16;
     const CHILD_FIRST = 2;
@@ -112,9 +112,11 @@ class RecursiveIteratorIterator implements \OuterIterator, \Traversable, \Iterat
     /**
      * The current active sub iterator
      *
+     * @param int $level
+     *
      * @return RecursiveIterator The current active sub iterator.
      */
-    public function getSubIterator()
+    public function getSubIterator($level = NULL)
     {
     }
 

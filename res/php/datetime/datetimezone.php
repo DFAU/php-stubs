@@ -91,7 +91,7 @@ class DateTimeZone
     }
 
     /**
-     * Returns numerically index array with all timezone identifiers
+     * Returns a numerically indexed array containing all defined timezone identifiers
      *
      * @param int $what
      * @param string $country

@@ -14,6 +14,6 @@
  * @return string The truncated ``string``. If  is set,
  *                is appended to the return value.
  */
-function mb_strimwidth($str, $start, $width, $trimmarker = NULL, $encoding = NULL)
+function mb_strimwidth($str, $start, $width, $trimmarker = 'quotquot', $encoding = 'mb_internal_encoding()')
 {
 }

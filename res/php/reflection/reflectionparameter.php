@@ -66,7 +66,7 @@ class ReflectionParameter implements \Reflector
     }
 
     /**
-     * Get class
+     * Get the type hinted class
      *
      * @return ReflectionClass A ``ReflectionClass`` object.
      */
@@ -86,7 +86,7 @@ class ReflectionParameter implements \Reflector
     /**
      * Gets declaring function
      *
-     * @return ReflectionFunction A ``ReflectionFunction`` object.
+     * @return ReflectionFunctionAbstract A ``ReflectionFunction`` object.
      */
     public function getDeclaringFunction()
     {
@@ -98,6 +98,15 @@ class ReflectionParameter implements \Reflector
      * @return scalar|array|null The parameters default value.
      */
     public function getDefaultValue()
+    {
+    }
+
+    /**
+     * Returns the default value's constant name if default value is constant or null
+     *
+     * @return string Returns string on success or null on failure.
+     */
+    public function getDefaultValueConstantName()
     {
     }
 
@@ -129,11 +138,31 @@ class ReflectionParameter implements \Reflector
     }
 
     /**
+     * Returns whether parameter MUST be callable
+     *
+     * @return bool Returns true if the parameter is ``callable``, false if it is
+     *              not or null on failure.
+     */
+    public function isCallable()
+    {
+    }
+
+    /**
      * Checks if a default value is available
      *
      * @return bool true if a default value is available, otherwise false
      */
     public function isDefaultValueAvailable()
+    {
+    }
+
+    /**
+     * Returns whether the default value of this parameter is constant
+     *
+     * @return bool Returns true if the default value is constant, false if it is not or
+     *              null on failure.
+     */
+    public function isDefaultValueConstant()
     {
     }
 

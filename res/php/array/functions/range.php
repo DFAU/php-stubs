@@ -6,12 +6,12 @@
  * @phpstub
  *
  * @param mixed $start
- * @param mixed $limit
+ * @param mixed $end
  * @param number $step
  *
  * @return array Returns an array of elements from  to
  *               , inclusive.
  */
-function range($start, $limit, $step = '1')
+function range($start, $end, $step = '1')
 {
 }

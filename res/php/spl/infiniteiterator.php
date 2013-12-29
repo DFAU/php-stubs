@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class InfiniteIterator extends \IteratorIterator implements \OuterIterator, \Traversable, \Iterator
+class InfiniteIterator extends \IteratorIterator implements \OuterIterator
 {
     /**
      * Constructs an InfiniteIterator

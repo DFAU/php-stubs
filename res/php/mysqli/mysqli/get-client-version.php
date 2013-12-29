@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Returns the MySQL client version as a string
+ * Returns the MySQL client version as an integer
  *
  * @phpstub
  *

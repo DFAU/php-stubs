@@ -12,7 +12,7 @@ class MongoCursor implements \Iterator
     /**
      * Create a new cursor
      *
-     * @param Mongo $connection
+     * @param MongoClient $connection
      * @param string $ns
      * @param array $query
      * @param array $fields
@@ -125,12 +125,7 @@ class MongoCursor implements \Iterator
     /**
      * Get the read preference for this query
      *
-     * @return array This function returns an array describing the read preference. The array
-     *               contains the values  for the numeric read preference
-     *               mode,  for the name of the read preference
-     *               mode, and  containing a list of all tag set
-     *               criteria. If no tag sets were specified,  will not
-     *               be present in the array.
+     * @return array
      */
     public function getReadPreference()
     {
@@ -148,11 +143,11 @@ class MongoCursor implements \Iterator
     /**
      * Gives the database a hint about the query
      *
-     * @param array $key_pattern
+     * @param mixed $index
      *
      * @return MongoCursor Returns this cursor.
      */
-    public function hint($key_pattern)
+    public function hint($index)
     {
     }
 
@@ -237,7 +232,7 @@ class MongoCursor implements \Iterator
     /**
      * Sets arbitrary flags in case there is no method available the specific flag
      *
-     * @param bool $flag
+     * @param int $flag
      * @param bool $set
      *
      * @return MongoCursor Returns this cursor.
@@ -249,10 +244,10 @@ class MongoCursor implements \Iterator
     /**
      * Set the read preference for this query
      *
-     * @param int $read_preference
+     * @param string $read_preference
      * @param array $tags
      *
-     * @return bool
+     * @return MongoCursor Returns this cursor.
      */
     public function setReadPreference($read_preference, $tags = array())
     {
@@ -270,7 +265,7 @@ class MongoCursor implements \Iterator
     }
 
     /**
-     * Sets whether this query can be done on a slave
+     * Sets whether this query can be done on a secondary
      *
      * @param bool $okay
      *

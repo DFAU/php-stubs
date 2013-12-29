@@ -8,11 +8,11 @@
  * @param string $data
  * @param string $method
  * @param string $password
- * @param bool $raw_output
+ * @param int $options
  * @param string $iv
  *
  * @return string Returns the encrypted string on success.
  */
-function openssl_encrypt($data, $method, $password, $raw_output = false, $iv = '')
+function openssl_encrypt($data, $method, $password, $options = false, $iv = '')
 {
 }

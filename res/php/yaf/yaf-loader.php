@@ -114,7 +114,7 @@ class Yaf_Loader
      *
      * @return void bool
      */
-    public function registerLocalNamespace($prefix = NULL)
+    public function registerLocalNamespace($prefix)
     {
     }
 

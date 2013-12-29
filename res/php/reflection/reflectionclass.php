@@ -63,7 +63,8 @@ class ReflectionClass implements \Reflector
     /**
      * Gets the constructor of the class
      *
-     * @return ReflectionMethod A ``ReflectionMethod`` object reflecting the class' constructor.
+     * @return ReflectionMethod A ``ReflectionMethod`` object reflecting the class' constructor, or null if the class
+     *                          has no constructor.
      */
     public function getConstructor()
     {
@@ -163,7 +164,7 @@ class ReflectionClass implements \Reflector
     /**
      * Gets an array of methods
      *
-     * @param string $filter
+     * @param int $filter
      *
      * @return ReflectionMethod[] An ``array`` of ``ReflectionMethod`` objects
      *                            reflecting each method.
@@ -261,10 +262,11 @@ class ReflectionClass implements \Reflector
      * Gets static property value
      *
      * @param string $name
+     * @param mixed $def_value
      *
      * @return scalar|array|null The value of the static property.
      */
-    public function getStaticPropertyValue($name)
+    public function getStaticPropertyValue($name, &$def_value = NULL)
     {
     }
 

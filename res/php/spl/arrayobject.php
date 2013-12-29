@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class ArrayObject implements \IteratorAggregate, \Traversable, \ArrayAccess, \Serializable, \Countable
+class ArrayObject implements \IteratorAggregate, \ArrayAccess, \Serializable, \Countable
 {
     const ARRAY_AS_PROPS = 2;
     const STD_PROP_LIST = 1;
@@ -133,7 +133,7 @@ class ArrayObject implements \IteratorAggregate, \Traversable, \ArrayAccess, \Se
      *
      * @param mixed $index
      *
-     * @return mixed The value at the specified index or false.
+     * @return mixed The value at the specified index or null.
      */
     public function offsetGet($index)
     {

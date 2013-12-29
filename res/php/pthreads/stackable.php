@@ -4,20 +4,14 @@
 class Stackable
 {
     /**
-     * Identification
+     * Manipulation
      *
-     * @return long A numeric value representing the identity of the creating context
-     */
-    public function getCreatorId()
-    {
-    }
-
-    /**
-     * Identification
+     * @param long $size
+     * @param boolean $preserve
      *
-     * @return long A numeric value, which can be used within a Stackable to retrieve the Worker Thread executing the object.
+     * @return boolean An array of items from the objects member table
      */
-    public function getThreadId()
+    public function chunk($size, $preserve)
     {
     }
 
@@ -35,6 +29,15 @@ class Stackable
      *
      * @return boolean A boolean indication of state
      */
+    public function isTerminated()
+    {
+    }
+
+    /**
+     * State Detection
+     *
+     * @return boolean A boolean indication of state
+     */
     public function isWaiting()
     {
     }
@@ -42,18 +45,80 @@ class Stackable
     /**
      * Synchronization
      *
-     * @return int An integral indication of success
+     * @return boolean A boolean indication of success
+     */
+    public function lock()
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @param mixed $from
+     * @param mixed $overwrite
+     *
+     * @return boolean A boolean indication of success
+     */
+    public function merge($from, $overwrite = NULL)
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @return boolean A boolean indication of state
      */
     public function notify()
     {
     }
 
     /**
+     * Manipulation
+     *
+     * @return boolean The last item from the objects properties table
+     */
+    public function pop()
+    {
+    }
+
+    /**
      * Execution
      *
-     * @return mixed 
+     * @return void The methods return value, if used, will be ignored
      */
     public function run()
+    {
+    }
+
+    /**
+     * Manipulation
+     *
+     * @return boolean The first item from the objects properties table
+     */
+    public function shift()
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @phpstub-variable-parameters
+     *
+     * @param Closure $block
+     * @param mixed $_
+     *
+     * @return mixed The return value from the block
+     */
+    public function synchronized($block, $_ = NULL)
+    {
+    }
+
+    /**
+     * Synchronization
+     *
+     * @return boolean A boolean indication of success
+     */
+    public function unlock()
     {
     }
 
@@ -62,7 +127,7 @@ class Stackable
      *
      * @param string $timeout
      *
-     * @return int An integral indication of success
+     * @return boolean A boolean indication of success
      */
     public function wait($timeout = NULL)
     {

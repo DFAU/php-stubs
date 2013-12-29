@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class DOMNamedNodeMap
+class DOMNamedNodeMap implements \Traversable
 {
     /** @var int */
     public $length;

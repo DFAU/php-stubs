@@ -65,7 +65,7 @@ class Yaf_Request_Http extends \Yaf_Request_Abstract
     }
 
     /**
-     * fetch a query parameter
+     * Fetch a query parameter
      *
      * @param string $name
      * @param string $default

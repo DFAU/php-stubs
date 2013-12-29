@@ -58,7 +58,7 @@ class V8Js
      * @param array $dependencies
      * @param bool $auto_enable
      *
-     * @return bool Returns true if extension was registered succesfully, false otherwise.
+     * @return bool Returns true if extension was registered successfully, false otherwise.
      */
     public function registerExtension($extension_name, $script, $dependencies = array(), $auto_enable = false)
     {

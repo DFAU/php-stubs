@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class Yaf_Session implements \Iterator, \Traversable, \ArrayAccess, \Countable
+class Yaf_Session implements \Iterator, \ArrayAccess, \Countable
 {
     protected $_started;
     protected $_session;

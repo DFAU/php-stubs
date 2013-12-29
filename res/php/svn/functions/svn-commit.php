@@ -7,10 +7,10 @@
  *
  * @param string $log
  * @param array $targets
- * @param bool $dontrecurse
+ * @param bool $recursive
  *
  * @return array Returns array in form of:
  */
-function svn_commit($log, $targets, $dontrecurse = false)
+function svn_commit($log, $targets, $recursive = true)
 {
 }

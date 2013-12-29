@@ -89,11 +89,12 @@ class Gender
     }
 
     /**
-     * Get textual country representation.
+     * Get textual country representation
      *
      * @param integer $country
      *
-     * @return string Returns country name as string or false on failure.
+     * @return array Returns an array with the short and full names of the country on success
+     *               .
      */
     public function country($country)
     {
@@ -108,6 +109,31 @@ class Gender
      * @return integer Returns gender of the name.
      */
     public function get($name, $country = NULL)
+    {
+    }
+
+    /**
+     * Check if the name0 is an alias of the name1.
+     *
+     * @param string $name0
+     * @param string $name1
+     * @param integer $country
+     *
+     * @return array 
+     */
+    public function isNick($name0, $name1, $country = NULL)
+    {
+    }
+
+    /**
+     * Get similar names.
+     *
+     * @param string $name
+     * @param integer $country
+     *
+     * @return array Returns an array with the similar names found.
+     */
+    public function similarNames($name, $country = NULL)
     {
     }
 }

@@ -90,7 +90,7 @@ class DomDocument extends \DOMNode
      *
      * @param string $name
      *
-     * @return DOMAttr The new ``DOMAttr`` or false if an error occured.
+     * @return DOMAttr The new ``DOMAttr`` or false if an error occurred.
      */
     public function createAttribute($name)
     {
@@ -104,7 +104,7 @@ class DomDocument extends \DOMNode
      * @param string $namespaceURI
      * @param string $qualifiedName
      *
-     * @return DOMAttr The new ``DOMAttr`` or false if an error occured.
+     * @return DOMAttr The new ``DOMAttr`` or false if an error occurred.
      */
     public function createAttributeNS($namespaceURI, $qualifiedName)
     {
@@ -115,7 +115,7 @@ class DomDocument extends \DOMNode
      *
      * @param string $data
      *
-     * @return DOMCDATASection The new ``DOMCDATASection`` or false if an error occured.
+     * @return DOMCDATASection The new ``DOMCDATASection`` or false if an error occurred.
      */
     public function createCDATASection($data)
     {
@@ -126,7 +126,7 @@ class DomDocument extends \DOMNode
      *
      * @param string $data
      *
-     * @return DOMComment The new ``DOMComment`` or false if an error occured.
+     * @return DOMComment The new ``DOMComment`` or false if an error occurred.
      */
     public function createComment($data)
     {
@@ -135,7 +135,7 @@ class DomDocument extends \DOMNode
     /**
      * Create new document fragment
      *
-     * @return DOMDocumentFragment The new ``DOMDocumentFragment`` or false if an error occured.
+     * @return DOMDocumentFragment The new ``DOMDocumentFragment`` or false if an error occurred.
      */
     public function createDocumentFragment()
     {
@@ -148,7 +148,7 @@ class DomDocument extends \DOMNode
      * @param string $value
      *
      * @return DOMElement Returns a new instance of class ``DOMElement`` or false
-     *                    if an error occured.
+     *                    if an error occurred.
      */
     public function createElement($name, $value = NULL)
     {
@@ -163,7 +163,7 @@ class DomDocument extends \DOMNode
      * @param string $qualifiedName
      * @param string $value
      *
-     * @return DOMElement The new ``DOMElement`` or false if an error occured.
+     * @return DOMElement The new ``DOMElement`` or false if an error occurred.
      */
     public function createElementNS($namespaceURI, $qualifiedName, $value = NULL)
     {
@@ -175,7 +175,7 @@ class DomDocument extends \DOMNode
      * @param string $name
      *
      * @return DOMEntityReference The new ``DOMEntityReference`` or false if an error
-     *                            occured.
+     *                            occurred.
      */
     public function createEntityReference($name)
     {
@@ -187,7 +187,7 @@ class DomDocument extends \DOMNode
      * @param string $target
      * @param string $data
      *
-     * @return DOMProcessingInstruction The new ``DOMProcessingInstruction`` or false if an error occured.
+     * @return DOMProcessingInstruction The new ``DOMProcessingInstruction`` or false if an error occurred.
      */
     public function createProcessingInstruction($target, $data = NULL)
     {
@@ -198,7 +198,7 @@ class DomDocument extends \DOMNode
      *
      * @param string $content
      *
-     * @return DOMText The new ``DOMText`` or false if an error occured.
+     * @return DOMText The new ``DOMText`` or false if an error occurred.
      */
     public function createTextNode($content)
     {
@@ -459,11 +459,12 @@ class DomDocument extends \DOMNode
       
      *
      * @param string $source
+     * @param int $options
      *
      * @return bool If called statically, returns a
      *              ``DOMDocument``.
      */
-    public function loadHTML($source)
+    public function loadHTML($source, $options = false)
     {
     }
 
@@ -473,11 +474,12 @@ class DomDocument extends \DOMNode
       
      *
      * @param string $filename
+     * @param int $options
      *
      * @return bool If called statically, returns a
      *              ``DOMDocument``.
      */
-    public function loadHTMLFile($filename)
+    public function loadHTMLFile($filename, $options = false)
     {
     }
 
@@ -603,10 +605,11 @@ class DomDocument extends \DOMNode
       
      *
      * @param string $filename
+     * @param int $flags
      *
      * @return bool 
      */
-    public function schemaValidate($filename)
+    public function schemaValidate($filename, $flags = NULL)
     {
     }
 
@@ -616,10 +619,11 @@ class DomDocument extends \DOMNode
       
      *
      * @param string $source
+     * @param int $flags
      *
      * @return bool 
      */
-    public function schemaValidateSource($source)
+    public function schemaValidateSource($source, $flags = NULL)
     {
     }
 

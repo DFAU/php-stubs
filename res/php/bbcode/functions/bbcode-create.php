@@ -9,6 +9,6 @@
  *
  * @return resource Returns a BBCode_Container
  */
-function bbcode_create($bbcode_initial_tags = array())
+function bbcode_create($bbcode_initial_tags = NULL)
 {
 }

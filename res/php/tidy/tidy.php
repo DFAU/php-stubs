@@ -31,7 +31,8 @@ class tidy
      *
      * @param tidy $object
      *
-     * @return tidyNode Returns the detected HTML version.
+     * @return tidyNode Returns a ``tidyNode`` object starting from the
+     *                  ltbodygt tag of the tidy parse tree.
      */
     public function body($object)
     {
@@ -96,6 +97,22 @@ class tidy
     }
 
     /**
+     * 
+       Returns the documentation for the given option name
+      
+     *
+     * @param string $optname
+     * @param tidy $object
+     * @param string $optname
+     *
+     * @return string Returns a string if the option exists and has documentation available, or
+     *                false otherwise.
+     */
+    public function getOptDoc($optname, $object, $optname)
+    {
+    }
+
+    /**
      * Get release date (version) for Tidy library
      *
      * @return string Returns a string with the release date of the Tidy library.
@@ -113,22 +130,6 @@ class tidy
      *             errors, or 2 for errors.
      */
     public function getStatus($object)
-    {
-    }
-
-    /**
-     * 
-       Returns the documentation for the given option name
-      
-     *
-     * @param string $optname
-     * @param tidy $object
-     * @param string $optname
-     *
-     * @return string Returns a string if the option exists and has documentation available, or
-     *                false otherwise.
-     */
-    public function getoptdoc($optname, $object, $optname)
     {
     }
 

@@ -5,14 +5,16 @@
  *
  * @phpstub
  *
- * @param array $input
- * @param int $num_req
+ * @param array $array
+ * @param int $num
  *
- * @return mixed If you are picking only one entry,
- *               returns the key for a random entry. Otherwise, it returns an array
- *               of keys for the random entries. This is done so that you can pick
- *               random keys as well as values out of the array.
+ * @return mixed When picking only one entry,  returns
+ *               the key for a random entry. Otherwise, an array of keys for the random
+ *               entries is returned. This is done so that random keys can be picked
+ *               from the array as well as random values. Trying to pick more elements
+ *               than there are in the array will result in an
+ *               level error, and NULL will be returned.
  */
-function array_rand($input, $num_req = 1)
+function array_rand($array, $num = 1)
 {
 }

@@ -9,6 +9,7 @@
  *
  * @return mixed If  is set, then
  *               
+ *               In this case, the character encoding for multibyte regex is NOT changed.
  *               If  is omitted, then
  *               the current character encoding name is returned.
  */

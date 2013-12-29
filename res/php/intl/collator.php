@@ -121,7 +121,7 @@ class Collator
      *                instantiated from rules or an error occurred, returns
      *                ``boolean`` false.
      */
-    public function getLocale($type = NULL, $coll, $type)
+    public function getLocale($type, $coll, $type)
     {
     }
 

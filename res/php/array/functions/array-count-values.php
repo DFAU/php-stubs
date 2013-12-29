@@ -5,11 +5,11 @@
  *
  * @phpstub
  *
- * @param array $input
+ * @param array $array
  *
  * @return array Returns an associative array of values from  as
  *               keys and their count as value.
  */
-function array_count_values($input)
+function array_count_values($array)
 {
 }

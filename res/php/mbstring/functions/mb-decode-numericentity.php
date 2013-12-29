@@ -11,6 +11,6 @@
  *
  * @return string The converted ``string``.
  */
-function mb_decode_numericentity($str, $convmap, $encoding)
+function mb_decode_numericentity($str, $convmap, $encoding = 'mb_internal_encoding()')
 {
 }

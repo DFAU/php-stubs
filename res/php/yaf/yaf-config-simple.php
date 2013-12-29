@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class Yaf_Config_Simple extends \Yaf_Config_Abstract implements \Iterator, \Traversable, \ArrayAccess, \Countable
+class Yaf_Config_Simple extends \Yaf_Config_Abstract implements \Iterator, \ArrayAccess, \Countable
 {
     protected $_readonly;
 
@@ -149,9 +149,9 @@ class Yaf_Config_Simple extends \Yaf_Config_Abstract implements \Iterator, \Trav
     }
 
     /**
-     * The toArray purpose
+     * Returns a PHP array
      *
-     * @return void 
+     * @return array 
      */
     public function toArray()
     {

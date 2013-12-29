@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class GlobIterator extends \FilesystemIterator implements \Iterator, \Traversable, \SeekableIterator, \Countable
+class GlobIterator extends \FilesystemIterator implements \SeekableIterator, \Countable
 {
     /**
      * Construct a directory using glob

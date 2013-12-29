@@ -570,10 +570,11 @@ class Phar extends \RecursiveDirectoryIterator implements \Countable, \ArrayAcce
      * Used to set the PHP loader or bootstrap stub of a Phar archive
      *
      * @param string $stub
+     * @param int $len
      *
      * @return bool 
      */
-    public function setStub($stub)
+    public function setStub($stub, $len = -1)
     {
     }
 
@@ -622,11 +623,11 @@ class Phar extends \RecursiveDirectoryIterator implements \Countable, \ArrayAcce
      * @param string $index
      * @param string $f404
      * @param array $mimetypes
-     * @param array $rewrites
+     * @param callable $rewrites
      *
      * @return void 
      */
-    public function webPhar($alias = NULL, $index = 'index.php', $f404 = NULL, $mimetypes = array(), $rewrites = array())
+    public function webPhar($alias = NULL, $index = 'index.php', $f404 = NULL, $mimetypes = array(), $rewrites = NULL)
     {
     }
 }

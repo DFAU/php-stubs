@@ -9,11 +9,12 @@
  * @param int $type
  * @param array $authns
  * @param array $addtl
+ * @param bool $raw
  *
  * @return array This function returns an array of associative arrays,
  *               . Each associative array contains
  *               the following keys:
  */
-function dns_get_record($hostname, $type = false, &$authns = array(), &$addtl = array())
+function dns_get_record($hostname, $type = false, &$authns = array(), &$addtl = array(), &$raw = false)
 {
 }

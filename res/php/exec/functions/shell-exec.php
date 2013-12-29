@@ -7,7 +7,8 @@
  *
  * @param string $cmd
  *
- * @return string The output from the executed command or null if an error occurred.
+ * @return string The output from the executed command or null if an error occurred or the
+ *                command produces no output.
  */
 function shell_exec($cmd)
 {

@@ -16,7 +16,7 @@ class MongoDB
     /**
      * Creates a new database
      *
-     * @param Mongo $conn
+     * @param MongoClient $conn
      * @param string $name
      */
     public function __construct($conn, $name)
@@ -66,7 +66,12 @@ class MongoDB
      * @param array $command
      * @param array $options
      *
-     * @return array Returns database response.
+     * @return array Returns database response. Every database response is always maximum one
+     *               document, which means that the result of a database command can never
+     *               exceed 16MB. The resulting document's structure depends on the command, but
+     *               most results will have the  field to indicate success
+     *               or failure and  containing an array of each of
+     *               the resulting documents.
      */
     public function command($command, $options = array())
     {
@@ -76,13 +81,11 @@ class MongoDB
      * Creates a collection
      *
      * @param string $name
-     * @param bool $capped
-     * @param int $size
-     * @param int $max
+     * @param array $options
      *
      * @return MongoCollection Returns a collection object representing the new collection.
      */
-    public function createCollection($name, $capped = false, $size = false, $max = false)
+    public function createCollection($name, $options = array())
     {
     }
 
@@ -90,11 +93,11 @@ class MongoDB
      * Creates a database reference
      *
      * @param string $collection
-     * @param mixed $a
+     * @param mixed $document_or_id
      *
      * @return array Returns a database reference array.
      */
-    public function createDBRef($collection, $a)
+    public function createDBRef($collection, $document_or_id)
     {
     }
 
@@ -184,12 +187,7 @@ class MongoDB
     /**
      * Get the read preference for this database
      *
-     * @return array This function returns an array describing the read preference. The array
-     *               contains the values  for the numeric read preference
-     *               mode,  for the name of the read preference
-     *               mode, and  containing a list of all tag set
-     *               criteria. If no tag sets were specified,  will not
-     *               be present in the array.
+     * @return array
      */
     public function getReadPreference()
     {
@@ -214,11 +212,11 @@ class MongoDB
     }
 
     /**
-     * Get an of MongoCollection for this database
+     * Gets an array of all MongoCollections for this database
      *
      * @param bool $includeSystemCollections
      *
-     * @return array Returns an array of MongoCollections.
+     * @return array Returns an array of MongoCollection objects.
      */
     public function listCollections($includeSystemCollections = false)
     {
@@ -259,7 +257,7 @@ class MongoDB
      *
      * @param string $name
      *
-     * @return MongoCollection Returns the collection.
+     * @return MongoCollection Returns a new collection object.
      */
     public function selectCollection($name)
     {
@@ -279,7 +277,7 @@ class MongoDB
     /**
      * Set the read preference for this database
      *
-     * @param int $read_preference
+     * @param string $read_preference
      * @param array $tags
      *
      * @return bool

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Returns all of the IMAP errors that have occured
+ * Returns all of the IMAP errors that have occurred
  *
  * @phpstub
  *

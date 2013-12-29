@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return all objects including their respective object id within the specified one
+ * Set the OID output format
  *
  * @phpstub
  *

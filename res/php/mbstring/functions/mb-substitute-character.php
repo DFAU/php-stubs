@@ -9,9 +9,9 @@
  *
  * @return mixed If  is set, it returns true for success,
  *               otherwise returns false.
- *               If  is not set, it returns the Unicode value,
- *               or "" or "".
+ *               If  is not set, it returns the current
+ *               setting.
  */
-function mb_substitute_character($substrchar = NULL)
+function mb_substitute_character($substrchar = 'mb_substitute_character()')
 {
 }

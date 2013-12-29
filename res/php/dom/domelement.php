@@ -232,7 +232,7 @@ class DomElement extends \DOMNode
      * @param string $name
      * @param string $value
      *
-     * @return DOMAttr The new ``DOMAttr`` or false if an error occured.
+     * @return DOMAttr The new ``DOMAttr`` or false if an error occurred.
      */
     public function setAttribute($name, $value)
     {

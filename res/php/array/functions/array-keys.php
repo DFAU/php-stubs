@@ -5,12 +5,12 @@
  *
  * @phpstub
  *
- * @param array $input
+ * @param array $array
  * @param mixed $search_value
  * @param bool $strict
  *
  * @return array Returns an array of all the keys in .
  */
-function array_keys($input, $search_value = NULL, $strict = false)
+function array_keys($array, $search_value = NULL, $strict = false)
 {
 }

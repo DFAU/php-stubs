@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return succesfully
+ * Return successfully
  *
  * @phpstub
  *

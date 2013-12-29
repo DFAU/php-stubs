@@ -7,6 +7,8 @@ class ReflectionObject extends \ReflectionClass implements \Reflector
     const IS_FINAL = 64;
     const IS_IMPLICIT_ABSTRACT = 16;
 
+    public $name;
+
     /**
      * Constructs a ReflectionObject
      *

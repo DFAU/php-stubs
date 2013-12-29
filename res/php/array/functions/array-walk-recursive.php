@@ -5,12 +5,12 @@
  *
  * @phpstub
  *
- * @param array $input
- * @param callable $funcname
+ * @param array $array
+ * @param callable $callback
  * @param mixed $userdata
  *
  * @return bool 
  */
-function array_walk_recursive(&$input, $funcname, $userdata = NULL)
+function array_walk_recursive(&$array, $callback, $userdata = NULL)
 {
 }

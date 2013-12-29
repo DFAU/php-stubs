@@ -8,7 +8,7 @@
  * @param string $query
  * @param resource $conn_identifier
  *
- * @return resource For SELECT, SHOW, DESCRIBE or EXPLAIN statements returns a connection identifier resource on success.
+ * @return resource For SELECT, SHOW, DESCRIBE or EXPLAIN statements returns a request identifier resource on success.
  */
 function cubrid_unbuffered_query($query, $conn_identifier = NULL)
 {

@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class SplTempFileObject extends \SplFileObject implements \SeekableIterator, \Iterator, \Traversable, \RecursiveIterator
+class SplTempFileObject extends \SplFileObject implements \SeekableIterator, \RecursiveIterator
 {
     /**
      * Construct a new temporary file object

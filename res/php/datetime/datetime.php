@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class DateTime
+class DateTime implements \DateTimeInterface
 {
     const ATOM = '"Y-m-d\\TH:i:sP"';
     const COOKIE = '"l, d-M-y H:i:s T"';
@@ -40,8 +40,6 @@ class DateTime
 
     /**
      * The __wakeup handler
-     *
-     * @return DateTime Initializes a DateTime object.
      */
     public function __wakeup()
     {
@@ -82,16 +80,20 @@ class DateTime
     /**
      * Returns the difference between two DateTime objects
      *
-     * @param DateTime $datetime2
+     * @param DateTimeInterface $datetime2
      * @param bool $absolute
-     * @param DateTime $datetime1
-     * @param DateTime $datetime2
+     * @param DateTimeInterface $datetime2
+     * @param bool $absolute
+     * @param DateTimeInterface $datetime2
+     * @param bool $absolute
+     * @param DateTimeInterface $datetime1
+     * @param DateTimeInterface $datetime2
      * @param bool $absolute
      *
      * @return DateInterval The ``DateInterval`` object representing the
      *                      difference between the two dates.
      */
-    public function diff($datetime2, $absolute = false, $datetime1, $datetime2, $absolute = false)
+    public function diff($datetime2, $absolute = false, $datetime2, $absolute = false, $datetime2, $absolute = false, $datetime1, $datetime2, $absolute = false)
     {
     }
 
@@ -99,12 +101,14 @@ class DateTime
      * Returns date formatted according to given format
      *
      * @param string $format
-     * @param DateTime $object
+     * @param string $format
+     * @param string $format
+     * @param DateTimeInterface $object
      * @param string $format
      *
      * @return string Returns the formatted date string on success.
      */
-    public function format($format, $object, $format)
+    public function format($format, $format, $format, $object, $format)
     {
     }
 
@@ -120,7 +124,7 @@ class DateTime
     /**
      * Returns the timezone offset
      *
-     * @param DateTime $object
+     * @param DateTimeInterface $object
      *
      * @return int Returns the timezone offset in seconds from UTC on success
      *             .
@@ -132,7 +136,7 @@ class DateTime
     /**
      * Gets the Unix timestamp
      *
-     * @param DateTime $object
+     * @param DateTimeInterface $object
      *
      * @return int Returns the Unix timestamp representing the date.
      */
@@ -143,7 +147,7 @@ class DateTime
     /**
      * Return time zone relative to given DateTime
      *
-     * @param DateTime $object
+     * @param DateTimeInterface $object
      *
      * @return DateTimeZone Returns a ``DateTimeZone`` object on success
      *                      .

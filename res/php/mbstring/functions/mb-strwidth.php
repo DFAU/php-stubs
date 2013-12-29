@@ -10,6 +10,6 @@
  *
  * @return int The width of ``string`` .
  */
-function mb_strwidth($str, $encoding = NULL)
+function mb_strwidth($str, $encoding = 'mb_internal_encoding()')
 {
 }

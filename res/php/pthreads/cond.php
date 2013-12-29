@@ -4,7 +4,7 @@
 class Cond
 {
     /**
-     * Broadcast a condition to all Threads
+     * Broadcast a Condition
      *
      * @param long $condition
      *
@@ -15,7 +15,7 @@ class Cond
     }
 
     /**
-     * Create a new Condition Variable
+     * Create a Condition
      *
      * @return long A handle to a Condition Variable
      */
@@ -24,7 +24,7 @@ class Cond
     }
 
     /**
-     * Destroy a handle to a Condition Variable and free the associated resources
+     * Destroy a Condition
      *
      * @param long $condition
      *
@@ -35,7 +35,7 @@ class Cond
     }
 
     /**
-     * Signal a condition to a single Thread
+     * Signal a Condition
      *
      * @param long $condition
      *
@@ -46,7 +46,7 @@ class Cond
     }
 
     /**
-     * Wait for a signal on a Condition Variable
+     * Wait for Condition
      *
      * @param long $condition
      * @param long $mutex

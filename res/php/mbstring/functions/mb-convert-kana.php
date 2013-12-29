@@ -11,6 +11,6 @@
  *
  * @return string The converted ``string``.
  */
-function mb_convert_kana($str, $option = 'KV', $encoding = NULL)
+function mb_convert_kana($str, $option = 'KV', $encoding = 'mb_internal_encoding()')
 {
 }

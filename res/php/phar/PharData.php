@@ -257,10 +257,11 @@ class PharData extends \Phar
      * dummy function (Phar::setStub is not valid for PharData)
      *
      * @param string $stub
+     * @param int $len
      *
      * @return bool 
      */
-    public function setStub($stub)
+    public function setStub($stub, $len = -1)
     {
     }
 }

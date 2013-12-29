@@ -84,7 +84,7 @@ class PDOStatement implements \Traversable
        Dump an SQL prepared command
       
      *
-     * @return bool 
+     * @return void 
      */
     public function debugDumpParams()
     {
@@ -157,7 +157,8 @@ class PDOStatement implements \Traversable
      * @return array returns an array containing
      *               all of the remaining rows in the result set. The array represents each
      *               row as either an array of column values or an object with properties
-     *               corresponding to each column name.
+     *               corresponding to each column name. An empty array is returned if there
+     *               are zero results to fetch, or false on failure.
      */
     public function fetchAll($fetch_style = NULL, $fetch_argument = NULL, $ctor_args = array())
     {
@@ -267,7 +268,7 @@ class PDOStatement implements \Traversable
      * @param int $PDO::FETCH_INTO
      * @param object $object
      *
-     * @return bool Returns  on success.
+     * @return bool 
      */
     public function setFetchMode($mode, $PDO::FETCH_COLUMN, $colno, $PDO::FETCH_CLASS, $classname, $ctorargs, $PDO::FETCH_INTO, $object)
     {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Multiply two arbitrary precision number
+ * Multiply two arbitrary precision numbers
  *
  * @phpstub
  *

@@ -228,11 +228,11 @@ class Yaf_Request_Abstract
     }
 
     /**
-     * The setBaseUri purpose
+     * set base URI
      *
      * @param string $uir
      *
-     * @return void 
+     * @return bool bool
      */
     public function setBaseUri($uir)
     {

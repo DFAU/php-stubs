@@ -16,6 +16,7 @@ define('MSG_EOR', 0);
 define('MSG_EOF', 0);
 define('SO_DEBUG', 0);
 define('SO_REUSEADDR', 0);
+define('SO_REUSEPORT', 0);
 define('SO_KEEPALIVE', 0);
 define('SO_DONTROUTE', 0);
 define('SO_LINGER', 0);

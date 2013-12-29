@@ -6,7 +6,7 @@ class Yaf_Action_Abstract extends \Yaf_Controller_Abstract
     protected $_controller;
 
     /**
-     * Execute the action
+     * Action entry point
      *
      * @phpstub-variable-parameters
      *
@@ -20,9 +20,9 @@ class Yaf_Action_Abstract extends \Yaf_Controller_Abstract
     }
 
     /**
-     * get controller instance
+     * Retrieve controller object
      *
-     * @return Yaf_Controller_Abstract 
+     * @return Yaf_Controller_Abstract instance
      */
     public function getController()
     {

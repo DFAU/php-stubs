@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Vector Arithmetic Substraction
+ * Vector Arithmetic Subtraction
  *
  * @phpstub
  *

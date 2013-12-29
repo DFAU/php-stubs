@@ -27,6 +27,17 @@ class Locale
     }
 
     /**
+     * Canonicalize the locale string
+     *
+     * @param string $locale
+     *
+     * @return string 
+     */
+    public function canonicalize($locale)
+    {
+    }
+
+    /**
      * Returns a correctly ordered and delimited locale ID
      *
      * @param array $subtags

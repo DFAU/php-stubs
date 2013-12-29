@@ -7,10 +7,10 @@
  *
  * @param callable $output_callback
  * @param int $chunk_size
- * @param bool $erase
+ * @param int $flags
  *
  * @return bool 
  */
-function ob_start($output_callback = NULL, $chunk_size = false, $erase = true)
+function ob_start($output_callback = NULL, $chunk_size = false, $flags = false)
 {
 }

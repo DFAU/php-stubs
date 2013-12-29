@@ -1,0 +1,6 @@
+<?php
+
+/** @phpstub */
+interface DateTimeInterface
+{
+}

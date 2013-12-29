@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class RecursiveCallbackFilterIterator extends \CallbackFilterIterator implements \OuterIterator, \Traversable, \Iterator, \RecursiveIterator
+class RecursiveCallbackFilterIterator extends \CallbackFilterIterator implements \OuterIterator, \RecursiveIterator
 {
     /**
      * Create a RecursiveCallbackFilterIterator from a RecursiveIterator

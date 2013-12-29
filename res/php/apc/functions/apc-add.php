@@ -11,7 +11,7 @@
  *
  * @return bool
  */
-function apc_add($key, $var = NULL, $ttl = false)
+function apc_add($key, $var, $ttl = false)
 {
 }
 

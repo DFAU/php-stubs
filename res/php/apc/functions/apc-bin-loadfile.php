@@ -15,6 +15,6 @@
  *              if the  is not a valid APC binary dump (e.g., unexpected
  *              size).
  */
-function apc_bin_loadfile($filename, $context = NULL, $flags = NULL)
+function apc_bin_loadfile($filename, $context = NULL, $flags = false)
 {
 }

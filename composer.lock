@@ -106,7 +106,7 @@
             "version": "dev-master",
             "source": {
                 "type": "svn",
-                "url": "https://svn.php.net/repository/phpdoc/en/",
+                "url": "http://svn.php.net/repository/phpdoc/en/",
                 "reference": "trunk/reference"
             },
             "type": "library",

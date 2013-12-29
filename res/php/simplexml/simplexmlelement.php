@@ -13,6 +13,15 @@ class SimpleXMLElement implements \Traversable
     }
 
     /**
+     * Returns the string content
+     *
+     * @return string Returns the string content on success or an empty string on failure.
+     */
+    public function __toString()
+    {
+    }
+
+    /**
      * 
        Adds an attribute to the SimpleXML element
       
@@ -100,11 +109,12 @@ class SimpleXMLElement implements \Traversable
       
      *
      * @param bool $recursive
+     * @param bool $from_root
      *
      * @return array The  method returns an ``array``
      *               of namespace names with their associated URIs.
      */
-    public function getDocNamespaces($recursive = false)
+    public function getDocNamespaces($recursive = false, $from_root = true)
     {
     }
 

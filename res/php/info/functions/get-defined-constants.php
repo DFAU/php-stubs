@@ -7,7 +7,8 @@
  *
  * @param bool $categorize
  *
- * @return array 
+ * @return array Returns an array of constant name => constant value array, optionally
+ *               groupped by extension name registering the constant.
  */
 function get_defined_constants($categorize = false)
 {

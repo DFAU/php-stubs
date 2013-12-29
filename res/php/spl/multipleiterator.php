@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class MultipleIterator implements \Iterator, \Traversable
+class MultipleIterator implements \Iterator
 {
     const MIT_KEYS_ASSOC = 2;
     const MIT_KEYS_NUMERIC = 0;
@@ -50,8 +50,8 @@ class MultipleIterator implements \Iterator, \Traversable
     /**
      * Gets the registered iterator instances
      *
-     * @return array An ``array`` of all registered iterator instances,
-     *               or false if no sub iterator is attached.
+     * @return array An ``array`` containing the current values of each attached iterator,
+     *               or false if no iterators are attached.
      */
     public function current()
     {
@@ -80,8 +80,8 @@ class MultipleIterator implements \Iterator, \Traversable
     /**
      * Gets the registered iterator instances
      *
-     * @return void An ``array`` of all registered iterator instances,
-     *              or false if no sub iterator is attached.
+     * @return array An ``array`` of all registered iterator instances,
+     *               or false if no sub iterator is attached.
      */
     public function key()
     {

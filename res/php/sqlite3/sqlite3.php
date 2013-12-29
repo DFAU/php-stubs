@@ -66,6 +66,18 @@ class SQLite3
     }
 
     /**
+     * Registers a PHP function for use as an SQL collating function
+     *
+     * @param string $name
+     * @param callable $callback
+     *
+     * @return bool 
+     */
+    public function createCollation($name, $callback)
+    {
+    }
+
+    /**
      * Registers a PHP function for use as an SQL scalar function
      *
      * @param string $name

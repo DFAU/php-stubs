@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return the ID generated for the lastest updated  column
+ * Return the ID generated for the last updated  column
  *
  * @phpstub
  *

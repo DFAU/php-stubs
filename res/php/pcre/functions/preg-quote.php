@@ -8,7 +8,7 @@
  * @param string $str
  * @param string $delimiter
  *
- * @return string Returns the quoted string.
+ * @return string Returns the quoted (escaped) string.
  */
 function preg_quote($str, $delimiter = NULL)
 {

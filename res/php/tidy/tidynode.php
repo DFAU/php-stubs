@@ -3,14 +3,31 @@
 /** @phpstub */
 class tidyNode
 {
+    /** @var string */
     public $value;
+
+    /** @var int */
     public $type;
+
+    /** @var bool */
     public $proprietary;
+
+    /** @var string */
     public $name;
+
+    /** @var int */
     public $line;
+
+    /** @var int */
     public $id;
+
+    /** @var int */
     public $column;
+
+    /** @var array */
     public $child;
+
+    /** @var array */
     public $attribute;
 
     /**

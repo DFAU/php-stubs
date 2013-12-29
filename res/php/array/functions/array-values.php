@@ -5,10 +5,10 @@
  *
  * @phpstub
  *
- * @param array $input
+ * @param array $array
  *
  * @return array Returns an indexed array of values.
  */
-function array_values($input)
+function array_values($array)
 {
 }

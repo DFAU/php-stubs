@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class RecursiveDirectoryIterator extends \FilesystemIterator implements \Traversable, \Iterator, \SeekableIterator, \RecursiveIterator
+class RecursiveDirectoryIterator extends \FilesystemIterator implements \SeekableIterator, \RecursiveIterator
 {
     /**
      * Constructs a RecursiveDirectoryIterator

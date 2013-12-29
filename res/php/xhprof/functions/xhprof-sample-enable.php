@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description
+ * Start XHProf profiling in sampling mode
  *
  * @phpstub
  *

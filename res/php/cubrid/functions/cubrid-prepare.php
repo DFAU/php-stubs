@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Prepare an SQL statement for execution
+ * Prepare a SQL statement for execution
  *
  * @phpstub
  *

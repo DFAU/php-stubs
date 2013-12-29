@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class WeakMap implements \Countable, \ArrayAccess, \Iterator, \Traversable
+class WeakMap implements \Countable, \ArrayAccess, \Iterator
 {
     /**
      * Constructs a new map

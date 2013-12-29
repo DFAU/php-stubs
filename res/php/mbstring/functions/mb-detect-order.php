@@ -9,6 +9,6 @@
  *
  * @return mixed 
  */
-function mb_detect_order($encoding_list = NULL)
+function mb_detect_order($encoding_list = 'mb_detect_order()')
 {
 }

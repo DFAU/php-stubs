@@ -67,9 +67,10 @@ class MongoCollection
      * @param array $a
      * @param array $options
      *
-     * @return mixed If "safe" is set, returns an associative array with the status of the inserts
-     *               ("ok") and any error that may have occured ("err").  Otherwise, returns
-     *               true if the batch insert was successfully sent, false otherwise.
+     * @return mixed If the  parameter is set to acknowledge the write,
+     *               returns an associative array with the status of the inserts ("ok") and any
+     *               error that may have occurred ("err").  Otherwise, returns true if the
+     *               batch insert was successfully sent, false otherwise.
      */
     public function batchInsert($a, $options = array())
     {
@@ -91,11 +92,11 @@ class MongoCollection
     /**
      * Creates a database reference
      *
-     * @param array $a
+     * @param mixed $document_or_id
      *
      * @return array Returns a database reference array.
      */
-    public function createDBRef($a)
+    public function createDBRef($document_or_id)
     {
     }
 
@@ -104,7 +105,7 @@ class MongoCollection
      *
      * @param string|array $keys
      *
-     * @return array Returns the generated name of the key if successful, or null otherwise.
+     * @return array Returns the database response.
      */
     public function deleteIndex($keys)
     {
@@ -149,14 +150,15 @@ class MongoCollection
      * @param string|array $key|keys
      * @param array $options
      *
-     * @return bool Returns true.
+     * @return bool Returns an array containing the status of the index creation if the
+     *              option is set. Otherwise, returns true.
      */
     public function ensureIndex($key|keys, $options = array())
     {
     }
 
     /**
-     * Querys this collection, returning a ``MongoCursor``
+     * Queries this collection, returning a ``MongoCursor``
       for the result set
      *
      * @param array $query
@@ -176,15 +178,15 @@ class MongoCollection
      * @param array $fields
      * @param array $options
      *
-     * @return void Returns the original document, or the modified document when
-     *              is set.
+     * @return array Returns the original document, or the modified document when
+     *               is set.
      */
     public function findAndModify($query, $update = array(), $fields = array(), $options = array())
     {
     }
 
     /**
-     * Querys this collection, returning a single element
+     * Queries this collection, returning a single element
      *
      * @param array $query
      * @param array $fields
@@ -209,12 +211,13 @@ class MongoCollection
     /**
      * Returns information about indexes on this collection
      *
-     * @return array This function returns an array in which each elements describes an array.
-     *               The elements contain the values  for the name of
-     *               the index,  for the namespace (the name of the
-     *               collection),  containing a list of all the keys
-     *               and their sort order that make up the index and
-     *               containing a MongoID object with the ID of this index.
+     * @return array This function returns an array in which each element describes an index.
+     *               Elements will contain the values  for the name of
+     *               the index,  for the namespace (a combination of the
+     *               database and collection name), and  for a list of all
+     *               fields in the index and their ordering. Additional values may be present for
+     *               special indexes, such as  or
+     *               .
      */
     public function getIndexInfo()
     {
@@ -232,12 +235,7 @@ class MongoCollection
     /**
      * Get the read preference for this collection
      *
-     * @return array This function returns an array describing the read preference. The array
-     *               contains the values  for the numeric read preference
-     *               mode,  for the name of the read preference
-     *               mode, and  containing a list of all tag set
-     *               criteria. If no tag sets were specified,  will not
-     *               be present in the array.
+     * @return array
      */
     public function getReadPreference()
     {
@@ -267,9 +265,9 @@ class MongoCollection
     }
 
     /**
-     * Inserts an array into the collection
+     * Inserts a document into the collection
      *
-     * @param array $a
+     * @param array|object $a
      * @param array $options
      *
      * @return bool|array Returns an array containing the status of the insertion if the
@@ -295,9 +293,9 @@ class MongoCollection
     }
 
     /**
-     * Saves an object to this collection
+     * Saves a document to this collection
      *
-     * @param array $a
+     * @param array|object $a
      * @param array $options
      *
      * @return mixed If  was set, returns an array containing the status of the save.
@@ -311,7 +309,7 @@ class MongoCollection
     /**
      * Set the read preference for this collection
      *
-     * @param int $read_preference
+     * @param string $read_preference
      * @param array $tags
      *
      * @return bool

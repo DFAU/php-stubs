@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class FilesystemIterator extends \DirectoryIterator implements \SeekableIterator, \Traversable, \Iterator
+class FilesystemIterator extends \DirectoryIterator implements \SeekableIterator
 {
     const CURRENT_AS_FILEINFO = 0;
     const CURRENT_AS_PATHNAME = 32;

@@ -5,12 +5,12 @@
  *
  * @phpstub
  *
- * @param array $input
- * @param callable $function
+ * @param array $array
+ * @param callable $callback
  * @param mixed $initial
  *
  * @return mixed Returns the resulting value.
  */
-function array_reduce($input, $function, $initial = NULL)
+function array_reduce($array, $callback, $initial = NULL)
 {
 }

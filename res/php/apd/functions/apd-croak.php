@@ -10,6 +10,6 @@
  *
  * @return void 
  */
-function apd_croak($warning, $delimiter = NULL)
+function apd_croak($warning, $delimiter = 'quotltBR /gtquot')
 {
 }

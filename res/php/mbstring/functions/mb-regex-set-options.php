@@ -10,6 +10,6 @@
  * @return string The previous options. If  is omitted,
  *                it returns the ``string`` that describes the current options.
  */
-function mb_regex_set_options($options = 'msr')
+function mb_regex_set_options($options = 'mb_regex_set_options()')
 {
 }

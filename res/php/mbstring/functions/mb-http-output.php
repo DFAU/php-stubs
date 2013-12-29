@@ -11,6 +11,6 @@
  *               returns the current HTTP output
  *               character encoding. Otherwise,
  */
-function mb_http_output($encoding = NULL)
+function mb_http_output($encoding = 'mb_http_output()')
 {
 }

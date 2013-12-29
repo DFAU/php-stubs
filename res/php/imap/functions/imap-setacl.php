@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sets the ACL for a giving mailbox
+ * Sets the ACL for a given mailbox
  *
  * @phpstub
  *

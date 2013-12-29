@@ -8,9 +8,8 @@
  * @param resource $zip_entry
  * @param int $length
  *
- * @return string Returns the data read, or false if the end of the file is
- *                reached.
+ * @return string Returns the data read, empty string on end of a file, or false on error.
  */
-function zip_entry_read($zip_entry, $length = NULL)
+function zip_entry_read($zip_entry, $length = 1024)
 {
 }

@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class RecursiveTreeIterator extends \RecursiveIteratorIterator implements \OuterIterator, \Traversable, \Iterator
+class RecursiveTreeIterator extends \RecursiveIteratorIterator implements \OuterIterator
 {
     const BYPASS_CURRENT = 4;
     const BYPASS_KEY = 8;

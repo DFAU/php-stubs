@@ -84,7 +84,7 @@ class AMQPQueue
      *
      * @return mixed An instance of ``AMQPEnvelope`` representing the message pulled from the queue, or false.
      */
-    public function get($flags = NULL)
+    public function get($flags = false)
     {
     }
 

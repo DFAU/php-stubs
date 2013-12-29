@@ -8,7 +8,7 @@ class Yaf_Route_Rewrite extends \Yaf_Route_Interface implements \Yaf_Route_Inter
     protected $_default;
 
     /**
-     * The __construct purpose
+     * Yaf_Route_Rewrite constructor
      *
      * @param string $match
      * @param array $route

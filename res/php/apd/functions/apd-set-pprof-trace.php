@@ -10,6 +10,6 @@
  *
  * @return string Returns path of the destination file.
  */
-function apd_set_pprof_trace($dump_directory = NULL, $fragment = 'pprof')
+function apd_set_pprof_trace($dump_directory = 'ini_get(quotapd.dumpdirquot)', $fragment = 'pprof')
 {
 }

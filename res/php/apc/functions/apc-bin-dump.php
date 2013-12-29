@@ -11,6 +11,6 @@
  * @return string Returns a binary dump of the given files and user variables from the APC cache,
  *                false if APC is not enabled, or null if an unknown error is encountered.
  */
-function apc_bin_dump($files = array(), $user_vars = array())
+function apc_bin_dump($files = NULL, $user_vars = NULL)
 {
 }

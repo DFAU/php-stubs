@@ -18,8 +18,9 @@ class ReflectionMethod extends \ReflectionFunctionAbstract implements \Reflector
      *
      * @param string|object $class
      * @param string $name
+     * @param string $class_method
      */
-    public function __construct($class, $name)
+    public function __construct($class, $name, $class_method)
     {
     }
 
@@ -48,7 +49,7 @@ class ReflectionMethod extends \ReflectionFunctionAbstract implements \Reflector
     /**
      * Returns a dynamically created closure for the method
      *
-     * @param string $object
+     * @param object $object
      *
      * @return Closure Returns ``Closure``.
      *                 Returns null in case of an error.

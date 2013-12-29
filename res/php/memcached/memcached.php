@@ -186,12 +186,27 @@ class Memcached
      *
      * @param string $key
      * @param int $offset
+     * @param int $initial_value
+     * @param int $expiry
      *
      * @return int Returns item's new value on success.
-     *             The  will return
-     *             if the key does not exist.
      */
-    public function decrement($key, $offset = 1)
+    public function decrement($key, $offset = 1, $initial_value = false, $expiry = false)
+    {
+    }
+
+    /**
+     * Decrement numeric item's value, stored on a specific server
+     *
+     * @param string $server_key
+     * @param string $key
+     * @param int $offset
+     * @param int $initial_value
+     * @param int $expiry
+     *
+     * @return int Returns item's new value on success.
+     */
+    public function decrementByKey($server_key, $key, $offset = 1, $initial_value = false, $expiry = false)
     {
     }
 
@@ -219,6 +234,33 @@ class Memcached
      *              if the key does not exist.
      */
     public function deleteByKey($server_key, $key, $time = false)
+    {
+    }
+
+    /**
+     * Delete multiple items
+     *
+     * @param array $keys
+     * @param int $time
+     *
+     * @return bool The  will return
+     *              if the key does not exist.
+     */
+    public function deleteMulti($keys, $time = false)
+    {
+    }
+
+    /**
+     * Delete multiple items from a specific server
+     *
+     * @param string $server_key
+     * @param array $keys
+     * @param int $time
+     *
+     * @return bool The  will return
+     *              if the key does not exist.
+     */
+    public function deleteMultiByKey($server_key, $keys, $time = false)
     {
     }
 
@@ -265,6 +307,15 @@ class Memcached
      *               if the key does not exist.
      */
     public function get($key, $cache_cb = NULL, &$cas_token = NULL)
+    {
+    }
+
+    /**
+     * Gets the keys stored on all the servers
+     *
+     * @return array Returns the keys stored on all the servers on success.
+     */
+    public function getAllKeys()
     {
     }
 
@@ -373,7 +424,9 @@ class Memcached
      *
      * @param string $server_key
      *
-     * @return array 
+     * @return array Returns an array containing three keys of ,
+     *               , and  on success or false
+     *               on failure.
      */
     public function getServerByKey($server_key)
     {
@@ -411,12 +464,45 @@ class Memcached
      *
      * @param string $key
      * @param int $offset
+     * @param int $initial_value
+     * @param int $expiry
      *
      * @return int Returns new item's value on success.
-     *             The  will return
-     *             if the key does not exist.
      */
-    public function increment($key, $offset = 1)
+    public function increment($key, $offset = 1, $initial_value = false, $expiry = false)
+    {
+    }
+
+    /**
+     * Increment numeric item's value, stored on a specific server
+     *
+     * @param string $server_key
+     * @param string $key
+     * @param int $offset
+     * @param int $initial_value
+     * @param int $expiry
+     *
+     * @return int Returns new item's value on success.
+     */
+    public function incrementByKey($server_key, $key, $offset = 1, $initial_value = false, $expiry = false)
+    {
+    }
+
+    /**
+     * Check if a persitent connection to memcache is being used
+     *
+     * @return bool Returns true if Memcache instance uses a persistent connection, false otherwise.
+     */
+    public function isPersistent()
+    {
+    }
+
+    /**
+     * Check if the instance was recently created
+     *
+     * @return bool Returns the true if instance is recently created, false otherwise.
+     */
+    public function isPristine()
     {
     }
 
@@ -448,6 +534,15 @@ class Memcached
     }
 
     /**
+     * Close any open connections
+     *
+     * @return bool 
+     */
+    public function quit()
+    {
+    }
+
+    /**
      * Replace the item under an existing key
      *
      * @param string $key
@@ -473,6 +568,15 @@ class Memcached
      *              if the key does not exist.
      */
     public function replaceByKey($server_key, $key, $value, $expiration = NULL)
+    {
+    }
+
+    /**
+     * Clears all servers from the server list
+     *
+     * @return bool 
+     */
+    public function resetServerList()
     {
     }
 
@@ -537,6 +641,54 @@ class Memcached
      * @return bool 
      */
     public function setOption($option, $value)
+    {
+    }
+
+    /**
+     * Set Memcached options
+     *
+     * @param array $options
+     *
+     * @return bool 
+     */
+    public function setOptions($options)
+    {
+    }
+
+    /**
+     * Set the credentials to use for authentication
+     *
+     * @param string $username
+     * @param string $password
+     *
+     * @return void 
+     */
+    public function setSaslAuthData($username, $password)
+    {
+    }
+
+    /**
+     * Set a new expiration on an item
+     *
+     * @param string $key
+     * @param int $expiration
+     *
+     * @return bool 
+     */
+    public function touch($key, $expiration)
+    {
+    }
+
+    /**
+     * Set a new expiration on an item on a specific server
+     *
+     * @param string $server_key
+     * @param string $key
+     * @param int $expiration
+     *
+     * @return bool 
+     */
+    public function touchByKey($server_key, $key, $expiration)
     {
     }
 }

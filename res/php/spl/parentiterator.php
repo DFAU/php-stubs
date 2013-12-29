@@ -1,7 +1,7 @@
 <?php
 
 /** @phpstub */
-class ParentIterator extends \RecursiveFilterIterator implements \RecursiveIterator, \OuterIterator, \Traversable, \Iterator
+class ParentIterator extends \RecursiveFilterIterator implements \RecursiveIterator, \OuterIterator
 {
     /**
      * Constructs a ParentIterator

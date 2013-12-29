@@ -7,9 +7,9 @@
  *
  * @param int $errorsOrWarnings
  *
- * @return mixed If errors and/or warnings occured on the last sqlsrv operation, an array of
+ * @return mixed If errors and/or warnings occurred on the last sqlsrv operation, an array of
  *               arrays containing error information is returned. If no errors and/or warnings
- *               occured on the last sqlsrv operation, null is returned. The following table
+ *               occurred on the last sqlsrv operation, null is returned. The following table
  *               describes the structure of the returned arrays:
  */
 function sqlsrv_errors($errorsOrWarnings = NULL)

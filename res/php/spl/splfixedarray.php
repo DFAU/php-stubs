@@ -11,6 +11,15 @@ class SplFixedArray implements \Iterator, \ArrayAccess, \Countable
     }
 
     /**
+     * Reinitialises the array after being unserialised
+     *
+     * @return void 
+     */
+    public function __wakeup()
+    {
+    }
+
+    /**
      * Returns the size of the array
      *
      * @return int Returns the size of the array.

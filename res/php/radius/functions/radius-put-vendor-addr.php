@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Attaches a vendor specific IP-Address attribute
+ * Attaches a vendor specific IP address attribute
  *
  * @phpstub
  *

@@ -95,7 +95,7 @@ class ReflectionProperty implements \Reflector
      *
      * @return mixed The current value of the property.
      */
-    public function getValue($object)
+    public function getValue($object = NULL)
     {
     }
 

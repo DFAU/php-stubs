@@ -5,17 +5,17 @@
  *
  * @phpstub
  *
- * @param mixed $var
+ * @param mixed $array_or_countable
  * @param int $mode
  *
  * @return int Returns the number of elements in .
- *             If  is not an array or an object with
+ *             If the parameter is not an array or not an object with
  *             implemented ``Countable`` interface,
  *             will be returned.
  *             There is one exception, if  is null,
  *             will be returned.
  */
-function count($var, $mode = false)
+function count($array_or_countable, $mode = false)
 {
 }
 
@@ -25,16 +25,16 @@ function count($var, $mode = false)
  * @phpstub-alias-of count
  * @phpstub
  *
- * @param mixed $var
+ * @param mixed $array_or_countable
  * @param int $mode
  *
  * @return int Returns the number of elements in .
- *             If  is not an array or an object with
+ *             If the parameter is not an array or not an object with
  *             implemented ``Countable`` interface,
  *             will be returned.
  *             There is one exception, if  is null,
  *             will be returned.
  */
-function sizeof($var, $mode = false)
+function sizeof($array_or_countable, $mode = false)
 {
 }
